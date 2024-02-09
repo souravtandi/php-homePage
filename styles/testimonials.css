@@ -1,0 +1,330 @@
+.tbody {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+}
+
+.tbody .title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tbody .title hr {
+    align-items: center;
+    color: #2C3338;
+    width: 90px;
+    height: 0.1px;
+}
+
+.tbody .title h3 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 7px;
+    color: #2C3338;
+    font-size: 12.78px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.236px;
+    text-transform: uppercase;
+}
+
+.mainContainer {
+    margin-top: 10px;
+    height: 238px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectnOne {
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+#mainImg {
+    width: 130.07px;
+    height: 167.58px;
+}
+
+.sectnOne h5 {
+    color: #000;
+    font-size: 6.41px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0%;
+}
+
+.sectnOne h6 {
+    color: #454545;
+    font-size: 5.917px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sectnOne h6 span {
+    color: #807E7E;
+    font-size: 5.917px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.smallProfile img {
+    width: 17.91px;
+    height: 17.91px;
+}
+
+#img1 {
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#img2 {
+    margin-left: -7px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#img3 {
+    margin-left: -7px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.btmFields {
+    display: flex;
+    gap: 10px;
+}
+
+.reviewCardCarousel {
+    width: 240px;
+    margin-right: auto !important;
+}
+
+.sectnTwo h3 {
+    color: #000;
+    font-size: 16.25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131.972%;
+    margin-right: 20px;
+}
+
+.sectnTwo h3 span {
+    color: #BE2D30;
+    font-size: 16.25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131.972%;
+}
+
+.sectnTwo h6 {
+    color: #4D555B;
+    font-size: 9.18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sectnTwo h6 span {
+    color: #4D555B;
+    font-size: 9.18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.customerFeedback {
+    margin-top: 5px;
+}
+
+.textWithBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftRightBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.leftRightBtn button {
+    margin-right: 7px;
+    border: none;
+    width: 20.858px;
+    height: 20.858px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 8px;
+    border-radius: 19.554px;
+    background: #E0E0E0;
+    text-align: center;
+    color: #000;
+}
+
+.reviewCard {
+    width: 210px;
+    height: 140px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.reviewCard a {
+    text-decoration: none;
+}
+
+.reviewCard .profileTitle {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.reviewCard #profile {
+    width: 29.251px;
+    height: 29.251px;
+    margin-right: 5px;
+}
+
+.reviewCard h4 {
+    text-decoration: none !important;
+    padding-top: 5px;
+    color: #000;
+    font-size: 11.554px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131.972%;
+}
+
+.reviewCard p {
+    margin-top: 6px;
+    color: #000;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 0%;
+    line-height: 10px;
+    height: 63px;
+}
+
+.reviewCard .googleMarks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reviewCard .googleMarks img {
+    width: 72px;
+    height: 34px;
+}
+
+#carouselExampleControls {
+    width: 220px;
+}
+
+@media (min-width: 768px) {
+    .title {
+        justify-content: center !important;
+        gap: 40px;
+    }
+
+    .title h3 {
+        margin-top: 2px !important;
+        font-size: 20px !important;
+    }
+
+    .title hr {
+        width: 180px !important;
+    }
+
+    .mainContainer {
+        justify-content: center !important;
+        gap: 20px;
+        height: 290px !important;
+    }
+
+    .sectnOne #mainImg {
+        width: 160px;
+        height: auto;
+    }
+
+    .sectnOne h5 {
+        font-size: 13px !important;
+    }
+
+    .sectnOne h6 {
+        font-size: 10px !important;
+    }
+
+    .sectnOne h6 span {
+        font-size: 10px !important;
+    }
+
+    .smallProfile {
+        margin-top: 5px;
+    }
+
+    .smallProfile img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .smallProfile #img1 {
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+
+    .smallProfile #img2 {
+        margin-left: -7px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+
+    .smallProfile #img3 {
+        margin-left: -7px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+
+    .reviewCardCarousel {
+        width: 800px;
+    }
+
+    .sectnTwo h3 {
+        font-size: 17px !important;
+    }
+
+    .sectnTwo h6 {
+        font-size: 10px !important;
+    }
+
+    .reviewCard {
+        width: 250px;
+        height: 180px;
+    }
+
+    .reviewCard .profileTitle #profile {
+        width: 35px;
+        height: auto;
+    }
+
+    .reviewCard .profileTitle h4 {
+        font-size: 13px;
+    }
+
+    .reviewCard p {
+        margin-top: 5px;
+        font-size: 10px !important;
+        line-height: 12px;
+        height: 98px;
+
+    }
+}

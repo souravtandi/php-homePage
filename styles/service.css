@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.ourServicesBody {
+    font-family: "Montserrat", sans-serif;
+}
+
+.ourServicesBody .shadowBar {
+    margin-top: -25px;
+    height: 8px;
+    box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.3);
+    /* background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0.00) 100%); */
+}
+
+.ourServicesBody .ourServiceMenuContainer {
+    height: 74px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ourServicesBody .ourServiceMenuContainer .ourServiceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ourServicesBody .ourServiceMenuContainer .ourServiceHeader hr {
+    align-items: center;
+    color: #2C3338;
+    width: 90px;
+    height: 0.5px;
+}
+
+.ourServicesBody .ourServiceMenuContainer .ourServiceHeader h3 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 9px;
+    text-align: center;
+    color: #2C3338;
+    font-size: 14.09px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.466px;
+    text-transform: uppercase;
+}
+
+.ourServicesBody .ourServiceMenuContainer .serviceFilterButtonContainer {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-block: 5px;
+    justify-content: center;
+}
+
+.ourServicesBody .ourServiceMenuContainer .serviceFilterButtonContainer button {
+    height: 20px;
+    border-radius: 14.624px;
+    border: 0.337px solid #AAA;
+    background: white;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+    color: #BE2D30;
+    font-size: 11.722px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-inline: 5px;
+}
+.ourServicesBody .ourServiceMenuContainer .serviceFilterButtonContainer .active{
+    color: #fff;
+    background: #F1A42B;
+}
+
+.ourServicesBody .ourServiceMenuContainer .serviceFilterButtonContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.ourServicesBody .allServicesContainer {
+    margin-top: 35px;
+}
+
+.ourServicesBody .serviceCard::-webkit-scrollbar {
+    display: none;
+}
+
+.ourServicesBody .serviceCard {
+    display: flex;
+    overflow-x: auto !important;
+    height: 230px;
+    white-space: nowrap;
+}
+
+.ourServicesBody .serviceCard .card {
+    margin-right: 10px;
+    margin-left: 55px;
+    width: 273px;
+    height: 175.649px;
+    flex-shrink: 0;
+    border-radius: 18.756px;
+    background: linear-gradient(0deg, #FFC31A 0%, #FFC31A 100%), radial-gradient(101.78% 73.57% at 17.58% 78.85%, #FBEFCE 0%, #FFC31A 100%);
+    background-blend-mode: color, normal;
+    box-shadow: 0px 1.191px 1.191px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.ourServicesBody .serviceCard .card .imgSection h4 {
+    z-index: 2;
+    margin-left: -20px !important;
+    position: absolute;
+    font-family: "Montserrat";
+    color: #fff;
+    font-size: 12.067px;
+    font-style: normal;
+    font-weight: 800;
+    max-width: 150px;
+    height: 28.372px;
+    clip-path: polygon(100% 0, 92% 50%, 100% 100%, 0% 100%, 0% 50%, 0% 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding-right: 7px;
+    background: linear-gradient(182deg, #F1A42B 23.49%, #E54B3B 165.99%);
+    filter: drop-shadow(0.657px 1.314px 0.657px rgba(0, 0, 0, 0.5));
+}
+
+.ourServicesBody .serviceCard .card .imgSection #backImg {
+    margin-left: -50px;
+    margin-top: 20px;
+    width: 191.778px;
+    height: 161.862px;
+    transform: rotate(0deg);
+    animation: rotateAnimation 10s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ourServicesBody .serviceCard .card .imgSection #nbox {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: -40px;
+    width: 169.96px;
+    height: 113.857px;
+}
+
+.ourServicesBody .serviceCard .card .imgSection h4 {
+    width: 200px !important;
+}
+
+.ourServicesBody .serviceCard .card .imgSection #nbuffy {
+    position: absolute;
+    width: 190px;
+    height: 140px;
+    margin-top: 37px;
+    margin-left: -45px;
+}
+
+.ourServicesBody .serviceCard .card .imgSection #mealboxImg {
+    position: absolute;
+    width: 171px;
+    height: 153px;
+    margin-top: 20px;
+    margin-left: -45px;
+}
+
+.ourServicesBody .serviceCard .card .imgSection #classicImg {
+    position: absolute;
+    width: 171px;
+    height: 108.055px;
+    margin-top: 50px;
+    margin-left: -45px;
+}
+
+.ourServicesBody .serviceCard .card .imgSection #gourmetImg {
+    position: absolute;
+    width: 151.84px;
+    height: 152.75px;
+    margin-top: 26px;
+    margin-left: -45px;
+}
+
+.ourServicesBody .serviceCard .card .imgSection #snackboxImg {
+    position: absolute;
+    width: 178px;
+    height: 130px;
+    margin-top: 35px;
+    margin-left: -45px;
+}
+
+.ourServicesBody .serviceCard .card .imgSection img {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: -40px;
+    width: 169.96px;
+    height: 113.857px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails {
+    /* padding-top: 10px; */
+    align-items: end;
+    margin-left: 140px;
+    margin-top: 25px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails h5 {
+    margin-left: 50px;
+    width: 75.06px;
+    height: 18.458px;
+    border-radius: 9.229px;
+    background-color: rgba(33, 33, 33, 0.08);
+    color: #FFF;
+    font-size: 8.075px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.144px;
+    text-align: center;
+    padding-top: 4px;
+    margin-bottom: 0%;
+    margin-top: 5px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails #ninjabox {
+    margin-top: -5px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails #mealBox {
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails #buffyTitle {
+    margin-top: -5px;
+    font-size: 20.07px;
+    margin-bottom: 5px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails #classicTitle {
+    margin-top: -5px;
+    font-size: 19.07px;
+    margin-bottom: 5px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails #gourmetTitle {
+    margin-top: -5px;
+    font-size: 16.5px;
+    margin-bottom: 5px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails #snackboxTitle {
+    margin-top: -7px;
+    font-size: 24.21px;
+    margin-bottom: -2px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails img {
+    width: 55px;
+    height: 11px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails h3 {
+    margin-top: 0%;
+    color: #0A1622;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails h3 span {
+    color: #fff;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails h6 {
+    color: #42484E;
+    font-size: 7.182px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails h6 span {
+    font-style: italic;
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails button {
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 10.122px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.763px;
+    letter-spacing: 0.372px;
+    width: 118.191px;
+    height: 25.008px;
+    border-radius: 6.53px;
+    background: #FA3434;
+    box-shadow: 0px 0.595px 1.191px 0px rgba(0, 0, 0, 0.20), 0px 0.298px 2.977px 0px rgba(0, 0, 0, 0.12), 0px 1.191px 1.489px 0px rgba(0, 0, 0, 0.14);
+}
+
+.ourServicesBody .serviceCard .card .serviceDetails #guestCount {
+    margin-top: 5px;
+    margin-bottom: 0%;
+    color: #2C3338;
+    font-size: 9.041px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    span {
+        color: #BE2D30;
+        font-size: 9.041px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+}
+
+@media (min-width: 768px) {
+    .ourServiceHeader {
+        display: flex;
+        justify-content: center !important;
+        gap: 20px;
+    }
+
+    .ourServiceHeader hr {
+        align-items: center;
+        color: #2C3338;
+        width: 180px !important;
+    }
+
+    .ourServiceHeader h3 {
+        margin-top: 4px !important;
+        text-align: center;
+        color: #2C3338;
+        font-size: 20px !important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.466px;
+        text-transform: uppercase;
+    }
+
+    .serviceFilterButtonContainer {
+        margin-top: -8px;
+    }
+
+    .allServicesContainer {
+        justify-content: center !important;
+        margin: auto !important;
+        align-items: center !important;
+    }
+
+    .serviceCard {
+        margin: auto !important;
+        justify-content: center !important;
+        margin-top: 35px !important;
+        height: 250px !important;
+    }
+
+    .serviceCard .card {
+        width: 313.753px !important;
+        height: 201.869px !important;
+    }
+
+    .serviceCard .card .imgSection h4 {
+        max-width: 175.267px !important;
+        height: 25.413px !important;
+        font-size: 13.868px !important;
+    }
+
+    .serviceCard .card #backImg {
+        width: 215.05px !important;
+        height: auto !important;
+    }
+
+    .serviceCard .card #nbox {
+        position: absolute;
+        margin-top: 45px;
+        margin-left: -40px;
+        width: 195.332px !important;
+        height: 130.853px !important;
+    }
+
+    .serviceCard .card #nbuffy {
+        position: absolute;
+        width: 206.78px !important;
+        height: 158.44px !important;
+        margin-top: 44px !important;
+        margin-left: -45px;
+    }
+
+    .serviceCard .card #mealboxImg {
+        position: absolute;
+        width: 196.527px !important;
+        height: 175.84px !important;
+        margin-top: 20px;
+        margin-left: -45px;
+    }
+
+    .serviceCard .card #classicImg {
+        position: absolute;
+        width: 196.527px !important;
+        height: 124.186px !important;
+        margin-top: 50px;
+        margin-left: -45px;
+    }
+
+    .serviceCard .card #gourmetImg {
+        position: absolute;
+        width: 200.16px !important;
+        height: 176.29px !important;
+        margin-top: 26px;
+        margin-left: -45px;
+    }
+
+    .serviceCard .card #snackboxImg {
+        position: absolute;
+        width: 204.572px !important;
+        height: 149.406px !important;
+        margin-top: 35px;
+        margin-left: -45px;
+    }
+
+    .serviceDetails {
+        margin-left: 165px !important;
+        margin-top: 30px;
+    }
+
+    .serviceDetails h5 {
+        width: 86.26px !important;
+        height: 21.21px !important;
+        border-radius: 10.61px !important;
+        font-size: 9.281px !important;
+    }
+
+    .serviceDetails img {
+        width: 63.21px !important;
+        height: 12.642px !important;
+    }
+
+    .serviceDetails #ninjabox {
+        font-size: 25px;
+        margin-bottom: 17px;
+    }
+
+    .serviceDetails #mealBox {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .serviceDetails #buffyTitle {
+        font-size: 23.066px !important;
+    }
+
+    .serviceDetails #classicTitle {
+        font-size: 21.917px !important;
+    }
+
+    .serviceDetails #gourmetTitle {
+        font-size: 19.071px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .serviceDetails #snackboxTitle {
+        font-size: 26.21px !important;
+    }
+
+    .serviceDetails h6 {
+        font-size: 9px !important;
+    }
+
+    .serviceDetails button {
+        width: 135.834px !important;
+        height: 28.741px !important;
+        border-radius: 7.505px !important;
+        font-size: 11.633px !important;
+        margin-top: 15px !important;
+    }
+}
