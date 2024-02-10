@@ -3,18 +3,40 @@
 <section>
     <h5>FILTER MENUS</h5>
 <?php
-$jsonData = file_get_contents('menuData.js');
+$jsonData = file_get_contents('menuData.json');
+global $jsonData;
+//var_dump($jsonData);
+    
+$filteredPackages = [];
+global $showVeg;
+$showVeg = true;
+$data = json_decode($jsonData);
+global $filteredPackages;
+$filteredPackages = $data->veg;
+echo $showVeg;
+echo "<br/>";
+//var_dump($filteredPackages);
 
+function toggleVegNonVeg($vNtype) {
+    echo "toggleVegNonVeg";
+    if($vNtype){
+        $showVeg = true;
+        $filteredPackages = $data->veg;
+    }else{
+        $showVeg = false;
+        $filteredPackages = $data->nonVeg;
+    }
+    echo $showVeg;
+    echo "<br/>";
+    var_dump($filteredPackages);
+}   
 function MenuFilter() {
-    global $jsonData;
-    $packages = $jsonData;
+    
+    // var_dump($data["veg"]);
     $selectedType = 'ninjaBox';
-    $showVeg = true;
     $selectedPackageType = '';
 
-
-    $packagesData = $showVeg ? ($packages['veg'] ?? []) : ($packages['nonVeg'] ?? []);
-
+    $packagesData = true ? ($packages['veg'] ?? []) : ($packages['nonVeg'] ?? []);
     $filteredPackages = array_map(function($item) use ($selectedType) {
         return array_merge($item, ['price' => $selectedType === 'ninjaBuffet' ? $item['price'] * 3 + 4002 : $item['price']]);
     }, $packagesData);
@@ -31,37 +53,31 @@ function MenuFilter() {
 
     function setAllFilter() {
         $selectedPackageType = '';
-        animateBtn();
         setBgColor("#FFC31A");
     }
 
     function setStarterFilter() {
         $selectedPackageType = 'starterHeavy';
-        animateBtn();
         setBgColor("#C09E41");
     }
 
     function setMainsFilter() {
         $selectedPackageType = 'mains';
-        animateBtn();
         setBgColor("#F54A4D");
     }
 
     function setNrFilter() {
         $selectedPackageType = 'northIndian';
-        animateBtn();
         setBgColor("#14B8B2");
     }
 
     function setAsianFilter() {
         $selectedPackageType = 'asian';
-        animateBtn();
         setBgColor("#FFC28C");
     }
 
     function setMcFilter() {
         $selectedPackageType = 'multiCusine';
-        animateBtn();
         setBgColor("#F07200");
     }
 
@@ -91,7 +107,7 @@ function MenuFilter() {
                     </div>
                     <div>
                         <label class="switch">
-                            <input type="checkbox" checked="<?= $showVeg ?>" onchange="setShowVeg(!<?= $showVeg ?>)" />
+                            <input type="checkbox" checked="<?= $showVeg ?>" onchange="toggleVegNonVeg(!<?= $showVeg ?>)" />
                             <span class="slider"></span>
                         </label>
                     </div>

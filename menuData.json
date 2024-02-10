@@ -1,0 +1,731 @@
+{
+    "veg": [
+      {
+        "id": 1,
+        "name": "Punjabi Party 1",
+        "price": 2599,
+        "price2": 11799,
+        "img": "/ninja-box/packages/VP1.png",
+        "img2": "/ninja-box/packages/VP1.png",
+        "details": "1 Starters + 4 Mains",
+        "items": [
+          "Tandoori Achari Aloo",
+          "Chole Masala",
+          "Dal Makhani",
+          "Steamed Rice",
+          "Lachha Paratha"
+        ],
+        "packageType": "mains"
+      },
+      {
+        "id": 2,
+        "name": "Indian Party 1",
+        "price": 3099,
+        "price2": 13299,
+        "img": "/ninja-box/packages/VP2.png",
+        "img2": "/ninja-box/packages/VP2.png",
+        "details": "5 Mains + 1 Dessert",
+        "items": [
+          "Paneer Butter masala",
+          "Dal Makhani",
+          "Kadai Veg",
+          "Lachha Paratha",
+          "Steamed Rice",
+          "Angoori Gulab Jamun"
+        ],
+        "packageType": "mains"
+      },
+      {
+        "id": 3,
+        "name": "Asian Party 1",
+        "price": 2399,
+        "price2": 11199,
+        "img": "/ninja-box/packages/VP3.png",
+        "img2": "/ninja-box/packages/VP1.png",
+        "details": "2 Starters + 3 Mains + 1 Dessert",
+        "items": [
+          "Honey chilli Baby Potato",
+          "Crispy Corn",
+          "Veg Manchurian Gravy",
+          "Veg Fried Rice",
+          "Chocolate Pastry"
+        ],
+        "packageType": "asian"
+      },
+      {
+        "id": 4,
+        "name": "Cocktail Party 2",
+        "price2": 13299,
+        "price": 3099,
+        "img": "/ninja-box/packages/VP4.png",
+        "img2": "/ninja-box/packages/VP1.png",
+        "details": "5 Starters + 1 Mains + 1 Dessert",
+        "items": [
+          "Cheesy Triangles",
+          "Achari Paneer Tikka",
+          "Veg spring roll",
+          "Veg Sheek Kebab",
+          "Cajun spice Potato",
+          "Veg Dum Biryani (Includes Raita)",
+          "Chocolate Pastry"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 5,
+        "name": "Cocktail Party 1",
+        "price": 2699,
+        "price2": 12099,
+        "img": "/ninja-box/packages/VP5.png",
+        "img2": "/ninja-box/packages/VP2.png",
+        "details": "1 Starters + 3 Mains + 1 Dessert",
+        "items": [
+          "French Fries",
+          "Pav Bhaji (1 Kg includes 20 Pav)",
+          "Veg Mac N Cheese Pasta",
+          "Veg Hakka Noodle",
+          "Chocolate Pastry"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 6,
+        "name": "House Party 1",
+        "price": 3399,
+        "price2": 14199,
+        "img": "/ninja-box/packages/VP6.png",
+        "img2": "/ninja-box/packages/VP4.png",
+        "details": "2 Starters + 4 Mains + 1 Dessert",
+        "items": [
+          "French Fries",
+          "Crispy Corn",
+          "Pav Bhaji (1 Kg includes 20 Pav)",
+          "Veg Mac N Cheese Pasta",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Veg Hakka Noodle",
+          "Angoori Gulab Jamun"
+        ],
+        "packageType": "multiCusine"
+      },
+      {
+        "id": 7,
+        "name": "Punjabi Party 2",
+        "price": 4599,
+        "price2": 17799,
+        "img": "/ninja-box/packages/VP1.png",
+        "img2": "/ninja-box/packages/VP4.png",
+        "details": "2 Starters + 5 Mains + 1 Dessert",
+        "items": [
+          "Achari Paneer Tikka",
+          "Hara bhara Kebab",
+          "Paneer Lababdar",
+          "Veg Kofta Curry",
+          "Dal Makhani",
+          "Steamed Rice",
+          "Lachha Paratha",
+          "Moong Dal Halwa"
+        ],
+        "packageType": "northIndian"
+      },
+      {
+        "id": 8,
+        "name": "Indian Party 2",
+        "price": 3999,
+        "price2": 15999,
+        "img": "/ninja-box/packages/VP2.png",
+        "img2": "/ninja-box/packages/VP5.png",
+        "details": "2 Starters + 5 Mains + 1 Dessert",
+        "items": [
+          "Paneer Chilly Dry - Classic",
+          "Crispy Corn",
+          "Paneer Butter masala",
+          "Kadai Veg",
+          "Dal Makhani",
+          "Steamed Rice",
+          "Lachha Paratha",
+          "Kesariya Phirni"
+        ],
+        "packageType": "northIndian"
+      },
+      {
+        "id": 9,
+        "name": "Asian party 2",
+        "price": 3599,
+        "price2": 14799,
+        "img": "/ninja-box/packages/VP3.png",
+        "img2": "/ninja-box/packages/VP2.png",
+        "details": "3 Starters + 5 Mains + 1 Dessert",
+        "items": [
+          "Crispy Corn",
+          "Churasco Pineapple",
+          "Honey chilli Baby Potato",
+          "Veg Fried Rice",
+          "Veg Hakka Noodle",
+          "Veg Chilli Garlic Noodle",
+          "Paneer Manchurian Gravy",
+          "Veg Manchurian Gravy",
+          "Chocolate Brownie"
+        ],
+        "packageType": "asian"
+      },
+      {
+        "id": 10,
+        "name": "Cocktail Party 4",
+        "price": 4099,
+        "price2": 16299,
+        "img": "/ninja-box/packages/VP4.png",
+        "img2": "/ninja-box/packages/VP3.png",
+        "details": "6 Starters + 1 Mains + 1 Dessert",
+        "items": [
+          "Cheesy Triangles",
+          "Achari Paneer Tikka",
+          "Veg spring roll",
+          "Hara bhara Kebab",
+          "Honey chilli Baby Potato",
+          "Veg Manchurian Dry",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Shahi meetha"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 11,
+        "name": "Cocktail Party 3",
+        "price": 3899,
+        "price2": 15699,
+        "img": "/ninja-box/packages/VP5.png",
+        "img2": "/ninja-box/packages/VP4.png",
+        "details": "3 Starters + 5 Mains + 1 Dessert",
+        "items": [
+          "French Fries",
+          "Crispy Corn",
+          "Cheesy Triangles",
+
+          "Pav Bhaji (1 Kg includes 20 Pav)",
+          "Veg Mac N Cheese Pasta",
+          "Arabiata Pasta (Tomota Sauce)",
+          "Veg Hakka Noodle",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Chocolate Brownie"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 12,
+        "name": "House Party 2",
+        "price": 4799,
+        "price2": 18399,
+        "img": "/ninja-box/packages/VP6.png",
+        "img2": "/ninja-box/packages/VP5.png",
+        "details": "4 Starters + 5 Mains + 2 Dessert",
+        "items": [
+          "Tandoori Paneer Tikka",
+          "Tandoori Achari Aloo",
+          "French Fries",
+          "Crispy Corn",
+          "Pav Bhaji (1 Kg includes 20 Pav)",
+          "Veg Mac N Cheese Pasta",
+          "Arabiata Pasta (Tomota Sauce)",
+          "Veg Schezwan Noodle",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Chocolate Brownie",
+          "Pineapple Pastry"
+        ],
+        "packageType": "multiCusine"
+      },
+      {
+        "id": 13,
+        "name": "Punjabi Party 3",
+        "price": 6099,
+        "price2": 22299,
+        "img": "/ninja-box/packages/VP1.png",
+        "img2": "/ninja-box/packages/VP6.png",
+        "details": "4 Starters + 6 Mains + 2 Dessert",
+        "items": [
+          "Achari Paneer Tikka",
+          "Tandoori Achari Aloo",
+          "Cheesy Triangles",
+          "Hara bhara Kebab",
+          "Paneer Lababdar",
+          "Veg Kofta Curry",
+          "Tawa Veg",
+          "Dal Makhani",
+          "Lachha Paratha",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Chocolate Brownie",
+          "Angoori Gulab Jamun"
+        ],
+        "packageType": "northIndian"
+      },
+      {
+        "id": 14,
+        "name": "Indian Party 3",
+        "price": 5399,
+        "price2": 20199,
+        "img": "/ninja-box/packages/VP2.png",
+        "img2": "/ninja-box/packages/VP3.png",
+        "details": "4 Starters + 5 Mains + 2 Dessert",
+        "items": [
+          "Paneer Chilly Dry - Classic",
+          "Crispy Corn",
+          "Honey chilli Baby Potato",
+          "Veg Manchurian Dry",
+          "Paneer Butter masala",
+          "Kadai Veg",
+          "Dal Makhani",
+          "Steamed Rice",
+          "Lachha Paratha",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Chocolate Brownie",
+          "Shahi meetha"
+        ],
+        "packageType": "northIndian"
+      },
+      {
+        "id": 15,
+        "name": "Asian Party 3",
+        "price": 5099,
+        "price2": 19299,
+        "img": "/ninja-box/packages/VP3.png",
+        "img2": "/ninja-box/packages/VP3.png",
+        "details": "5 Starters + 5 Mains + 2 Dessert",
+        "items": [
+          "Crispy Corn",
+          "Honey chilli Baby Potato",
+          "Churasco Pineapple",
+          "Mushroom Manchurian Dry",
+          "Schzwan Paneer Chilly Dry",
+          "Veg Manchurian Gravy",
+          "Paneer Manchurian Gravy",
+          "Veg Fried Rice",
+          "Veg Hakka Noodle",
+          "Veg Chilli Garlic Noodle",
+          "Angoori Gulab Jamun",
+          "Chocolate Brownie"
+        ],
+        "packageType": "asian"
+      },
+      {
+        "id": 16,
+        "name": "Cocktail Party 5",
+        "price": 5099,
+        "price2": 19299,
+        "img": "/ninja-box/packages/VP4.png",
+        "img2": "/ninja-box/packages/VP5.png",
+        "details": "5 Starters + 4 Mains + 2 Dessert",
+        "items": [
+          "Cheesy Triangles",
+          "Achari Paneer Tikka",
+          "Veg spring roll",
+          "Veg Kebab",
+          "Malai Broccoli",
+          "Veg Manchurian Gravy",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Veg Fried Rice",
+          "Veg Schezwan Noodle",
+          "Chocolate Brownie",
+          "Moong Dal Halwa"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 17,
+        "name": "Cocktail Party 6",
+        "price": 6099,
+        "price2": 22299,
+        "img": "/ninja-box/packages/VP5.png",
+        "img2": "/ninja-box/packages/VP6.png",
+        "details": "5 Starters + 5 Mains + 2 Dessert",
+        "items": [
+          "French Fries",
+          "Crispy Corn",
+          "Cheesy Triangles",
+          "Tandoori Paneer Tikka",
+          "Tandoori Malai Chap",
+          "Pav Bhaji (1 Kg includes 20 Pav)",
+          "Veg Mac N Cheese Pasta",
+          "Arabiata Pasta (Tomota Sauce)",
+          "Veg Hakka Noodle",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Chocolate Brownie",
+          "Moong Dal Halwa"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 18,
+        "name": "House Party 3",
+        "price": 5699,
+        "price2": 21099,
+        "img": "/ninja-box/packages/VP6.png",
+        "img2": "/ninja-box/packages/VP6.png",
+        "details": "5 Starters + 5 Mains + 2 Dessert",
+        "items": [
+          "Pudina Paneer Tikka",
+          "Tandoori Achari Aloo",
+          "Cheesy Triangles",
+          "Hara bhara Kebab",
+          "Malai Broccoli",
+          "Pav Bhaji (1 Kg includes 20 Pav)",
+          "Alfredo Pasta (White Sauce)",
+          "Arabiata Pasta (Tomota Sauce)",
+          "Veg Schezwan Noodle",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Chocolate Brownie",
+          "Angoori Gulab Jamun"
+        ],
+        "packageType": "multiCusine"
+      }
+    ],
+    "nonVeg": [
+      {
+        "id": 1,
+        "name": "Punjabi Party 1",
+        "price": 3499,
+        "price2": 14499,
+        "img": "/ninja-box/packages/nvp1.png",
+        "img2": "/ninja-box/packages/nvp1.png",
+        "details": "1 Starters + 4 Mains",
+        "items": [
+          "Achari Chicken Tikka",
+          "Butter chicken masala",
+          "Dal Makhani",
+          "Steamed Rice",
+          "Lachha Paratha"
+        ],
+        "packageType": "mains"
+      },
+      {
+        "id": 2,
+        "name": "Indian Party 1",
+        "price": 2999,
+        "price2": 12999,
+        "img": "/ninja-box/packages/nvp2.png",
+        "img2": "/ninja-box/packages/nvp2.png",
+        "details": "5 Mains",
+        "items": [
+          "Dal Makhani",
+          "Chicken Kadai",
+          "Tawa Veg",
+          "Lachha Paratha",
+          "Steamed Rice"
+        ],
+        "packageType": "mains"
+      },
+      {
+        "id": 3,
+        "name": "Asian Party 1",
+        "price": 2799,
+        "price2": 12399,
+        "img": "/ninja-box/packages/nvp3.png",
+        "img2": "/ninja-box/packages/nvp1.png",
+        "details": "2 Starters + 3 Mains",
+        "items": [
+          "BBQ Chicken Wings",
+          "Honey chilli Baby Potato",
+          "Veg Manchurian Gravy",
+          "Chicken Fried Rice",
+          "Veg Hakka Noodle"
+        ],
+        "packageType": "asian"
+      },
+      {
+        "id": 4,
+        "name": "Cocktail Party 1",
+        "price": 2399,
+        "price2": 11199,
+        "img": "/ninja-box/packages/nvp4.png",
+        "img2": "/ninja-box/packages/nvp1.png",
+        "details": "4 Starters + 2 Mains",
+        "items": [
+          "BBQ Chicken Wings",
+          "Achari Paneer Tikka",
+          "Dahi ke kebab",
+          "Tandoori Fish Tikka",
+          "Chicken Seekh Dum Biryani (Includes Raita)",
+          "Veg Dum Biryani (Includes Raita)"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 5,
+        "name": "Cocktail Party 2",
+        "price": 2699,
+        "price2": 12099,
+        "img": "/ninja-box/packages/nvp5.png",
+        "img2": "/ninja-box/packages/nvp2.png",
+        "details": "1 Starters + 4 Mains + 1 Dessert",
+        "items": [
+          "French Fries",
+          "Chicken Alfredo Pasta (White Sauce)",
+          "Arabiata Pasta (Tomota Sauce)",
+          "Veg Hakka Noodle",
+          "Veg Dum Biryani (Includes Raita)",
+          "Chocolate Pastry"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 6,
+        "name": "House Party 1",
+        "price": 3299,
+        "price2": 13899,
+        "img": "/ninja-box/packages/nvp6.png",
+        "img2": "/ninja-box/packages/nvp4.png",
+        "details": "5 Mains",
+        "items": [
+          "Chicken Keema (1 Kg includes 20 Pav)",
+          "Arabiata Pasta (Tomota Sauce)",
+          "Chicken Dum Biryani (Includes Raita)",
+          "Veg Dum Biryani (Includes Raita)",
+          "Veg Hakka Noodle"
+        ],
+        "packageType": "multiCusine"
+      },
+      {
+        "id": 7,
+        "name": "Punjabi Party 2",
+        "price": 3899,
+        "price2": 15699,
+        "img": "/ninja-box/packages/nvp1.png",
+        "img2": "/ninja-box/packages/nvp4.png",
+        "details": "2 Starters + 5 Mains + 1 Dessert",
+        "items": [
+          "Tandoori Achari Aloo",
+          "Coastal BBQ Fish Tikka",
+          "Butter chicken masala",
+          "Kadai Veg",
+          "Dal Makhani",
+          "Steamed Rice",
+          "Lachha Paratha",
+          "Chocolate Pastry"
+        ],
+        "packageType": "northIndian"
+      },
+      {
+        "id": 8,
+        "name": "Indian Party 2",
+        "price": 4299,
+        "price2": 16899,
+        "img": "/ninja-box/packages/nvp2.png",
+        "img2": "/ninja-box/packages/nvp5.png",
+        "details": "2 Starters + 5 Mains + 1 Dessert",
+        "items": [
+          "Achari Chicken Tikka",
+          "Honey chilli Baby Potato",
+          "Dal Makhani",
+          "Chicken Kadai",
+          "Paneer Lababdar",
+          "Lachha Paratha",
+          "Steamed Rice",
+          "Kesariya Phirni"
+        ],
+        "packageType": "northIndian"
+      },
+      {
+        "id": 9,
+        "name": "Asian Party 2",
+        "price": 4099,
+        "price2": 16299,
+        "img": "/ninja-box/packages/nvp3.png",
+        "img2": "/ninja-box/packages/nvp2.png",
+        "details": "2 Starters + 4 Mains + 1 Dessert",
+        "items": [
+          "Chilli Garlic Prawns",
+          "Churasco Pineapple",
+          "Chicken Manchurian - Chilli Garlic Gravy",
+          "Veg Manchurian Gravy",
+          "Chicken Fried Rice",
+          "Veg Hakka Noodle",
+          "Chocolate Brownie"
+        ],
+        "packageType": "asian"
+      },
+      {
+        "id": 10,
+        "name": "Cocktail Party 4",
+        "price": 4299,
+        "price2": 16899,
+        "img": "/ninja-box/packages/nvp4.png",
+        "img2": "/ninja-box/packages/nvp3.png",
+        "details": "5 Starters + 2 Mains + 1 Dessert",
+        "items": [
+          "BBQ Chicken Wings",
+          "Tandoori Fish Tikka",
+          "Chilli Garlic Prawns",
+          "Tandoori Achari Aloo",
+          "Hara bhara Kebab",
+          "Chicken Seekh Dum Biryani (Includes Raita)",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Moong Dal Halwa"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 11,
+        "name": "Cocktail Party 3",
+        "price": 4199,
+        "price2": 16599,
+        "img": "/ninja-box/packages/nvp5.png",
+        "img2": "/ninja-box/packages/nvp4.png",
+        "details": "1 Starters + 5 Mains + 1 Dessert",
+        "items": [
+          "French Fries",
+          "Veg Mac N Cheese Pasta",
+          "Chicken Keema (1 Kg includes 20 Pav)",
+          "Veg Hakka Noodle",
+          "Chicken Seekh Dum Biryani (Includes Raita)",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Pineapple Pastry"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 12,
+        "name": "House Party 2",
+        "price": 4799,
+        "price2": 18399,
+        "img": "/ninja-box/packages/nvp6.png",
+        "img2": "/ninja-box/packages/nvp5.png",
+        "details": "6 Mains + 1 Dessert",
+        "items": [
+          "Chicken Keema (1 Kg includes 20 Pav)",
+          "Fish in Schezwan Gravy",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Mutton Dum Biryani (Includes Raita)",
+          "Chicken Dum Biryani (Includes Raita)",
+          "Veg Fried Rice",
+          "Veg Schezwan Noodle",
+          "Chocolate Brownie"
+        ],
+        "packageType": "multiCusine"
+      },
+      {
+        "id": 13,
+        "name": "Punjabi Party 3",
+        "price": 5199,
+        "price2": 19599,
+        "img": "/ninja-box/packages/nvp1.png",
+        "img2": "/ninja-box/packages/nvp6.png",
+        "details": "3 Starters + 5 Mains + 1 Dessert",
+        "items": [
+          "Achari Chicken Tikka",
+          "Amritsari Fish Tikka",
+          "Chilli Garlic Prawns",
+          "Butter chicken masala",
+          "Dal Makhani",
+          "Malai Kofta Gravy",
+          "Steamed Rice",
+          "Lachha Paratha",
+          "Chocolate Brownie"
+        ],
+        "packageType": "northIndian"
+      },
+      {
+        "id": 14,
+        "name": "Indian Party 3",
+        "price": 5499,
+        "price2": 20499,
+        "img": "/ninja-box/packages/nvp2.png",
+        "img2": "/ninja-box/packages/nvp3.png",
+        "details": "6 Mains + 2 Dessert",
+        "items": [
+          "Dal Makhani",
+          "Chicken Kadai",
+          "Mutton Rogan Josh",
+          "Paneer Lababdar",
+          "Lachha Paratha",
+          "Veg Dum Biryani (Includes Raita)",
+          "Chocolate Brownie",
+          "Fruit custard"
+        ],
+        "packageType": "northIndian"
+      },
+      {
+        "id": 15,
+        "name": "Asian Party 3",
+        "price": 6499,
+        "price2": 23499,
+        "img": "/ninja-box/packages/nvp3.png",
+        "img2": "/ninja-box/packages/nvp3.png",
+        "details": "3 Starters + 5 Mains + 2 Dessert",
+        "items": [
+          "chicken seekh kebab  (5.5)",
+          "Tandoori Paneer Tikka",
+          "Mutton Sheekh Kebab",
+          "Veg Manchurian Gravy",
+          "Chicken Fried Rice",
+          "Veg Fried Rice",
+          "Veg Hakka Noodle",
+          "Chicken Manchurian - Chilli Garlic Gravy",
+          "Chocolate Pastry",
+          "Moong Dal Halwa"
+        ],
+        "packageType": "asian"
+      },
+      {
+        "id": 16,
+        "name": "Cocktail Party 5",
+        "price": 5699,
+        "price2": 21099,
+        "img": "/ninja-box/packages/nvp4.png",
+        "img2": "/ninja-box/packages/nvp5.png",
+        "details": "2 Starters + 5 Mains + 2 Dessert",
+        "items": [
+          "BBQ Chicken Wings",
+          "Achari Paneer Tikka",
+          "Prawns in Chilli Garlic Gravy",
+          "Fish in Schezwan Gravy",
+          "Veg Manchurian Gravy",
+          "Veg Fried Rice",
+          "Veg Hakka Noodle",
+          "Chocolate Brownie",
+          "Pineapple Pastry"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 17,
+        "name": "Cocktail Party 6",
+        "price": 5899,
+        "price2": 21699,
+        "img": "/ninja-box/packages/nvp5.png",
+        "img2": "/ninja-box/packages/nvp6.png",
+        "details": "6 Starters + 2 Mains + 2 Dessert",
+        "items": [
+          "Chilli Garlic Prawns",
+          "Tandoori Fish Tikka",
+          "Tandoori Achari Aloo",
+          "BBQ Chicken Wings",
+          "Mutton Sheekh Kebab",
+          "Hara bhara Kebab",
+          "Mutton Dum Biryani (Includes Raita)",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Chocolate Brownie",
+          "Kesariya Phirni"
+        ],
+        "packageType": "starterHeavy"
+      },
+      {
+        "id": 18,
+        "name": "House Party 3",
+        "price": 5799,
+        "price2": 21399,
+        "img": "/ninja-box/packages/nvp6.png",
+        "img2": "/ninja-box/packages/nvp6.png",
+        "details": "1 Starters + 6 Mains + 2 Dessert",
+        "items": [
+          "French Fries",
+          "Chicken Keema (1 Kg includes 20 Pav)",
+          "Pav Bhaji (1 Kg includes 20 Pav)",
+          "Veg Mac N Cheese Pasta",
+          "Mutton Dum Biryani (Includes Raita)",
+          "Paneer Tikka Dum Biryani (Includes Raita)",
+          "Chicken Hakka Noodle",
+          "Chocolate Brownie",
+          "Pineapple Pastry"
+        ],
+        "packageType": "multiCusine"
+      }
+    ]
+  }

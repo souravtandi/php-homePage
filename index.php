@@ -37,25 +37,11 @@
         <?php include 'ourPromise.php'; ?>
         <?php include 'news.php'; ?>
         <?php include 'categories.php'; ?>
-        <?php include 'test.php'; ?>
+        <?php include 'test3.php'; ?>
     </main>
 
     <footer>
         <!-- Footer content -->
-        <div class="owl-carousel owl-theme">
-    <div class="item"><h4>1</h4></div>
-    <div class="item"><h4>2</h4></div>
-    <div class="item"><h4>3</h4></div>
-    <div class="item"><h4>4</h4></div>
-    <div class="item"><h4>5</h4></div>
-    <div class="item"><h4>6</h4></div>
-    <div class="item"><h4>7</h4></div>
-    <div class="item"><h4>8</h4></div>
-    <div class="item"><h4>9</h4></div>
-    <div class="item"><h4>10</h4></div>
-    <div class="item"><h4>11</h4></div>
-    <div class="item"><h4>12</h4></div>
-</div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="jquery.min.js"></script>
@@ -73,7 +59,7 @@
                 items:3
             },
             1000:{
-                items:5
+                items:3
             }
         }
     })

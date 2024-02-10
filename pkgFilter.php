@@ -1,4 +1,9 @@
 <!-- pkgFilter.php -->
+<?php
+    $jsonData = file_get_contents('menuData.json');
+    $data = json_decode($jsonData);
+?>
+<div id="jsonData" style="display: none;"><?php echo $jsonData;?></div>
 
 <section>
 <div class="menuBody" id="packages">
@@ -12,7 +17,7 @@
     </div>
     <div class="dropdownContainer">
         <h4>Choice Of Service -</h4>
-        <select>
+        <select id="ninjaType" onchange="changeByNinjaType()">
             <option value="ninjaBox">NinjaBox (Self Service - Mini Buffet)</option>
             <option value="ninjaBuffet">NinjaBuffet (Setup + Service)</option>
         </select>
@@ -25,69 +30,25 @@
                 </div>
                 <div>
                     <label class="switch">
-                        <input type="checkbox" checked="<?php echo $showVeg ? 'checked' : ''; ?>" onChange="toggleVeg();" />
+                        <input type="checkbox" checked="<?php echo $showVeg ? 'checked' : ''; ?>" onchange="toggleVegNonVeg()" />
                         <span class="slider"></span>
                     </label>
                 </div>
             </div>
             <div class="filterBtns">
-                <button>All</button>
-                <button>Starter Heavy</button>
-                <button>Mains Only</button>
-                <button>North Indian</button>
-                <button>Asian</button>
-                <button>Multi Cuisine</button>
+                <button id="all" class="pktdummy" onclick="getFilteredData('all')">All</button>
+                <button id="starterHeavy" class="pktdummy" onclick="getFilteredData('starterHeavy')">Starter Heavy</button>
+                <button id="mains" class="pktdummy" onclick="getFilteredData('mains')">Mains Only</button>
+                <button id="northIndian" class="pktdummy" onclick="getFilteredData('northIndian')">North Indian</button>
+                <button id="asian" class="pktdummy" onclick="getFilteredData('asian')">Asian</button>
+                <button id="multiCusine" class="pktdummy" onclick="getFilteredData('multiCusine')">Multi Cuisine</button>
             </div>
         </div>
         <div class="pkgsContainer">
-            <div class="cards">
-                <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
-                    <div class="owl-carousel owl-theme">
-                    <?php
-                    // Read the JSON file
-                    $jsonData = file_get_contents('packages.json');
-
-                    // Decode the JSON data into a PHP array
-                    $packages = json_decode($jsonData, true);
-
-                    // Define a function to generate HTML for each package
-                    function generatePackageHTML($package) {
-                        return '
-                        <div class="item">
-                        <div class="FilterPkgcard mt-3">
-                            <h4>'.$package['name'].'</h4>
-                            <h5>'.$package['description'].'</h5>
-                            <h3>'.$package['price'].'</h3>
-                            <h6>'.$package['guests'].'</h6>
-                            <div class="smallimgTag">
-                                <img src="'.$package['imgTagSrc'].'" width="43.289" height="28.859" />
-                            </div>
-                            <div class="pkgImage">
-                                <img src="'.$package['pkgImgSrc'].'" width="137.436" height="108.223" />
-                            </div>
-                            <div class="viewButton">
-                                <button>View Details & Customize</button>
-                            </div>
-                        </div>
-                        </div>
-                        ';
-                    }
-
-                    // Initialize an empty array to store generated HTML for each package
-                    $carouselItems = array();
-
-                    // Iterate over each package and generate HTML dynamically
-                    foreach ($packages['packages'] as $package) {
-                        // Generate HTML for each package and add it to the $carouselItems array
-                        $carouselItems[] = generatePackageHTML($package);
-                    }
-
-                    // Implode the generated carousel items to create the final HTML
-                    echo implode("\n", $carouselItems);
-                    ?>
-                    </div>
+                <div id="filteredHtmlOnLoad" class="owl-carousel owl-theme">
                 </div>
-            </div>
+                <div id="filteredHtmlNoLoad" class="owl-carousel owl-theme">
+                </div>
             <div class="visitPageContainer">
                 <h6>Visit Page <FontAwesomeIcon icon="<?php echo $faArrowUpRightFromSquare; ?>" /></h6>
                 <div class="leftRigthBtn">
@@ -103,3 +64,87 @@
     // PHP logic for dynamic content generation
     ?>
 </section>
+<script>
+    let filteredData = [];
+
+    let filteredPackages = [];
+    let showVeg = true;
+    let packageType = '';
+    let jsonData = JSON.parse(document.getElementById("jsonData").innerHTML);
+    getFilteredData('all', jsonData);
+
+    function changeByNinjaType(){
+       let ninjaType = document.getElementById("ninjaType").value;
+       jsonData = JSON.parse(document.getElementById("jsonData").innerHTML);
+
+       let packagesData = filteredPackages.map(item => ({
+            ...item,
+            price: ninjaType === 'ninjaBuffet' ? item.price * 3 + 4002 : item.price,
+        }));
+       getFilteredData(packageType, packagesData);
+    }
+
+    function toggleVegNonVeg(){
+        showVeg = !showVeg;
+        getFilteredData(packageType, jsonData);
+    }
+    function getFilteredData(fil1, jsonData){
+        if(!jsonData){
+            jsonData = JSON.parse(document.getElementById("jsonData").innerHTML);
+        }
+        let collection = document.getElementsByClassName("pktdummy");
+        for(let j=0; j<collection.length; j++){
+            collection[j].classList.remove("packageTypeActive");
+            document.getElementById(fil1).classList.add('packageTypeActive');
+        }
+
+        const packagesData = showVeg
+        ? (jsonData?.veg || []).filter(item => item).sort((a, b) => a.price - b.price)
+        : (jsonData?.nonVeg || []).filter(item => item).sort((a, b) => a.price - b.price);
+
+        if(fil1 === '' || fil1 === 'all'){
+            let filteredHtml = '';
+            let cardsHtml = getCardsHtml(packagesData);
+            filteredHtml = cardsHtml + '';
+            document.getElementById("filteredHtmlOnLoad").innerHTML = filteredHtml;
+            document.getElementById("filteredHtmlNoLoad").style.display = 'none';
+        }else if(fil1 !== '' && fil1 !== 'all'){
+            packageType = fil1;
+            filteredPackages = packagesData
+            .filter(item => (fil1 ? item.packageType === fil1 : true))
+            .sort((a, b) => a.price - b.price);
+            document.getElementById("filteredHtmlOnLoad").innerHTML = '';
+            let cardsHtml = getCardsHtml(filteredPackages);
+            document.getElementById("filteredHtmlNoLoad").innerHTML = cardsHtml;
+            document.getElementById("filteredHtmlNoLoad").style.display = 'block';
+        }
+    }
+
+    function getCardsHtml(filteredPackages){
+        let cardsHtml = '';
+            for(let i=0; i<filteredPackages.length; i++){
+                cardsHtml = cardsHtml + 
+                `
+                        <div class="item">
+                            <div class="flterPkgcard mt-3">
+                                <h4>${filteredPackages[i].name}</h4>
+                                <h5>${filteredPackages[i].description}</h5>
+                                <h3>${filteredPackages[i].price}</h3>
+                                <h6>${filteredPackages[i].img}</h6>
+                                <div class="smallimgTag">
+                                    <img src="" width="43.289" height="28.859" />
+                                </div>
+                                <div class="pkgImage">
+                                    <img src="" width="137.436" height="108.223" />
+                                </div>
+                                <div class="viewButton">
+                                    <button>View Details & Customize</button>
+                                </div>
+                        </div>
+                    </div>
+                
+                `;
+            }
+            return cardsHtml;
+    }
+</script>
