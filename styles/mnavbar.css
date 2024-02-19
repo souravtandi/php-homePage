@@ -1,0 +1,43 @@
+.mobileNavbar #navContainer {
+    height: 55px;
+}
+.mobileNavbar #btn:active {
+    color: none;
+    border-radius: none;
+    color: none;
+    border: none;
+}
+.mobileNavbar #btn {
+    margin-left: -6px;
+}
+.mobileNavbar #hmbg {
+    margin-bottom: 5px;
+}
+.mobileNavbar #midLogo {
+    margin-left: -10px;
+}
+.mobileNavbar .contents {
+    padding-top: 12.5px;
+    display: flex;
+    margin-inline: 12px;
+    justify-content: space-between;
+}
+.mobileNavbar .navMenu {
+    height: 582px;
+    background-color: #fafafa;
+}
+.mobileNavbar #navImg {
+    margin-inline: 10px;
+}
+.mobileNavbar #navLink {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25.8102px;
+    letter-spacing: -0.03em;
+    line-height: 31px;
+    color: #2c3338;
+    text-decoration: none;
+}
+.mobileNavbar #navLink span {
+    color: #be2d30;
+}

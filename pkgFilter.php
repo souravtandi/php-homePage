@@ -60,9 +60,8 @@
     </div>
 </div>
 
-    <?php
-    // PHP logic for dynamic content generation
-    ?>
+<?php
+?>
 </section>
 <script>
     let filteredData = [];
@@ -106,17 +105,16 @@
             let filteredHtml = '';
             let cardsHtml = getCardsHtml(packagesData);
             filteredHtml = cardsHtml + '';
+            console.log(filteredHtml);
             document.getElementById("filteredHtmlOnLoad").innerHTML = filteredHtml;
-            document.getElementById("filteredHtmlNoLoad").style.display = 'none';
         }else if(fil1 !== '' && fil1 !== 'all'){
             packageType = fil1;
             filteredPackages = packagesData
             .filter(item => (fil1 ? item.packageType === fil1 : true))
             .sort((a, b) => a.price - b.price);
-            document.getElementById("filteredHtmlOnLoad").innerHTML = '';
             let cardsHtml = getCardsHtml(filteredPackages);
-            document.getElementById("filteredHtmlNoLoad").innerHTML = cardsHtml;
-            document.getElementById("filteredHtmlNoLoad").style.display = 'block';
+            console.log(cardsHtml);
+            document.getElementById("filteredHtmlOnLoad").innerHTML = cardsHtml + '';
         }
     }
 
